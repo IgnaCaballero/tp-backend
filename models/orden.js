@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 const ordenSchema = new mongoose.Schema({
   items: [{
-    product: { type: mongoose.Schema.Types.ObjectId, ref: 'Producto' },
-    quantity: {type: Number},
+    producto: { type: mongoose.Schema.Types.ObjectId, ref: 'Producto' },
+    cantidad: {type: Number},
   }],
   total: {type: Number}
 });
