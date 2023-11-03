@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+//const Categoria = require('../controllers/categoriaController');
 
 const productoSchema = new mongoose.Schema({
   nombre: {type:String, require : true},
