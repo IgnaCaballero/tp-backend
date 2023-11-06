@@ -15,7 +15,7 @@ app.get('/', (req, res) =>{
 
 app.get('/producto', productoRoutes);
 app.get('/categoria', categoriaRoutes);
-app.get('/orden', ordenCompraRoutes);
+app.get('/carrito', ordenCompraRoutes);
 
 mongoose
     .connect('mongodb+srv://ignacaballero:ingreso123@cluster0.spmrf7i.mongodb.net/productos?retryWrites=true&w=majority')

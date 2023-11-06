@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const ordenCompraController = require('../controllers/ordenCompraController');
 
-router.post('/', ordenCompraController.crearCarrito);
+router.post('/carrito', ordenCompraController.crearCarrito);
 
 router.post('/:carritoId/agregar', ordenCompraController.agregarProductoAlCarrito);
 
