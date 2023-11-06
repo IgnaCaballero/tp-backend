@@ -2,11 +2,11 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
+const app = express();
+
 const productoRoutes = require('./routes/productoRoutes');
 const categoriaRoutes = require('./routes/categoriaRoutes')
 const ordenCompraRoutes = require('./routes/ordenCompraRoutes');
-
-const app = express();
 
 app.use(bodyParser.json());
 app.get('/', (req, res) =>{
