@@ -1,0 +1,535 @@
+{
+	"info": {
+		"_postman_id": "4c10f4f9-f99a-4914-9abe-140c78a761d9",
+		"name": "VORTEX AKADEMI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30781511"
+	},
+	"item": [
+		{
+			"name": "Creacion de categoria Notebook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Notebook\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/categoria/categoria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categoria",
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creacion de cateogira Telefono",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Telefono\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/categoria/categoria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categoria",
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creacion de categoria Ropa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Ropa\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/categoria/categoria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categoria",
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creacion de producto Mac",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Macbook\",\n    \"descripcion\": \"Computadora de alta gama\",\n    \"precio\": 1000,\n    \"categoria\":\"654d02df0f5de6cf7a38554a\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/producto/producto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"producto",
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creacion de producto Zapatilla",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Zapatilla Forum\",\n    \"descripcion\": \"Zapatilla Urbana marca ADIDAS\",\n    \"precio\": 150,\n    \"categoria\":\"654d03610f5de6cf7a385550\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/producto/producto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"producto",
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creacion de producto Remera",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Remera Circa\",\n    \"descripcion\": \"Remera de algodon marca Circa\",\n    \"precio\": 50,\n    \"categoria\":\"654d03610f5de6cf7a385550\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/producto/producto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"producto",
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creacion de producto Telefono",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Samsung S20\",\n    \"descripcion\": \"Telefono de alta gama\",\n    \"precio\": 300,\n    \"categoria\":\"654d032d0f5de6cf7a38554e\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/producto/producto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"producto",
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/producto/producto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"producto",
+						"producto"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener producto por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/producto/producto/654d056d0f5de6cf7a385559",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"producto",
+						"producto",
+						"654d056d0f5de6cf7a385559"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar producto",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"precio\": 350\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/producto/producto/654d056d0f5de6cf7a385559",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"producto",
+						"producto",
+						"654d056d0f5de6cf7a385559"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar producto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/producto/producto/654d0e446340e7759e841522",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"producto",
+						"producto",
+						"654d0e446340e7759e841522"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar categorias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/categoria/categoria",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categoria",
+						"categoria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Categoria por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/categoria/654d03610f5de6cf7a385550",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categoria",
+						"654d03610f5de6cf7a385550"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar categoria",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nombre\": \"Computadora\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/categoria/654d02df0f5de6cf7a38554a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categoria",
+						"654d02df0f5de6cf7a38554a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar categoria",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/categoria/654d02df0f5de6cf7a38554a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"categoria",
+						"654d02df0f5de6cf7a38554a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear Carrito",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/carrito/carrito",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"carrito"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Agregar un producto al carrito",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"producto\":\"654d05080f5de6cf7a385557\",\n    \"cantidad\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/carrito/654d1a8a11b46343b681b1b2/producto/654d05080f5de6cf7a385557",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"654d1a8a11b46343b681b1b2",
+						"producto",
+						"654d05080f5de6cf7a385557"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar un producto en el carrito",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"producto\":\"654d05080f5de6cf7a385557\",\n    \"cantidad\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/carrito/654d1a8a11b46343b681b1b2/producto/654d05080f5de6cf7a385557",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"654d1a8a11b46343b681b1b2",
+						"producto",
+						"654d05080f5de6cf7a385557"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar un producto del carrito",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"producto\":\"654d05080f5de6cf7a385557\",\n    \"cantidad\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/carrito/654d1a8a11b46343b681b1b2/producto/654d05080f5de6cf7a385557",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"carrito",
+						"654d1a8a11b46343b681b1b2",
+						"producto",
+						"654d05080f5de6cf7a385557"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Borrar carrito",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"producto\":\"654d05080f5de6cf7a385557\",\n    \"cantidad\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/654d1a8a11b46343b681b1b2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"654d1a8a11b46343b681b1b2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

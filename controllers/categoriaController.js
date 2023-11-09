@@ -22,7 +22,6 @@ const obtenerCategoriaPorId = async (req, res) => {
 const crearCategoria = async (req, res) => {
   const nombre = req.body;
   const nuevaCategoria = new Categoria(nombre);
-
   try {
     const categoriaCreada = await nuevaCategoria.save();
     res.json(categoriaCreada);
@@ -34,7 +33,6 @@ const crearCategoria = async (req, res) => {
 const actualizarCategoria = async (req, res) => {
   const { categoriaId } = req.params;
   const nombre = req.body;
-
   try {
     const categoriaActualizada = await Categoria.findByIdAndUpdate(categoriaId,
       nombre, { new: true });
@@ -47,7 +45,6 @@ const actualizarCategoria = async (req, res) => {
 
 const borrarCategoria = async (req, res) => {
   const { categoriaId } = req.params;
-
   try {
     await Categoria.findByIdAndRemove(categoriaId);
     res.json({ mensaje: 'Categoría eliminada con éxito' });

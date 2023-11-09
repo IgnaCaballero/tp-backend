@@ -15,8 +15,8 @@ const crearCarrito = async (req, res) => {
 };
 
 const agregarProductoAlCarrito = async (req, res) => {
-  const { carritoId } = req.params;
-  const { productoId, cantidad } = req.body;
+  const { productoId, carritoId } = req.params;
+  const { cantidad } = req.body;
   try {
     const carrito = await OrdenCompra.findById(carritoId);
     if (!carrito) {

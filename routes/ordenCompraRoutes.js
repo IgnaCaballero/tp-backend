@@ -4,7 +4,7 @@ const ordenCompraController = require('../controllers/ordenCompraController');
 
 router.post('/carrito', ordenCompraController.crearCarrito);
 
-router.post('/:carritoId/agregar', ordenCompraController.agregarProductoAlCarrito);
+router.post('/:carritoId/producto/:productoId', ordenCompraController.agregarProductoAlCarrito);
 
 router.put('/:carritoId/producto/:productoId', ordenCompraController.actualizarProductoEnCarrito);
 
